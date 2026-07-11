@@ -18,7 +18,7 @@ namespace LightBarUtility
         private void MainWindow_SourceInitialized(object? sender, EventArgs e)
         {
             // Dock the window to the bottom edge of the screen
-           // AppBarFunctions.SetAppBar(this, ABEdge.Bottom);
+            AppBarFunctions.SetAppBar(this, ABEdge.Bottom);
         }
 
         // Safely unregister the reserved space when the app closes
