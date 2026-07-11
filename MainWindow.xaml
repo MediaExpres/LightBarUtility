@@ -8,16 +8,16 @@
     
     <Window.ContextMenu>
         <ContextMenu>
-            <MenuItem Header="Mod Fixat (Împinge ferestrele în sus)" Click="MenuFixat_Click"/>
-            <MenuItem Header="Mod Flotant (Plutește și poate fi mutat)" Click="MenuFlotant_Click"/>
+            <MenuItem Header="Docked Mode (Pins to bottom)" Click="MenuDocked_Click"/>
+            <MenuItem Header="Floating Mode (Movable)" Click="MenuFloating_Click"/>
             <Separator/>
-            <MenuItem Header="Închide bara (Exit)" Click="MenuClose_Click"/>
+            <MenuItem Header="Exit" Click="MenuExit_Click"/>
         </ContextMenu>
     </Window.ContextMenu>
     
-   <Grid>
-        <TextBlock Text="Right click anywhere to toggle menu" 
-                   Foreground="Gray" 
+    <Grid>
+        <TextBlock Text="Right-click anywhere to toggle menu" 
+                   Foreground="#333333" 
                    FontSize="11" 
                    HorizontalAlignment="Right" 
                    VerticalAlignment="Center" 
