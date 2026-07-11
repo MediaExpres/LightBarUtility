@@ -1,6 +1,6 @@
 ﻿<Window x:Class="LightBarUtility.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/schemas/2006/xaml"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="LightBar" Height="40"
         WindowStyle="None" ResizeMode="NoResize" 
         Background="White" Topmost="True" ShowInTaskbar="False">
