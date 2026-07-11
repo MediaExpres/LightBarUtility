@@ -7,7 +7,6 @@ namespace LightBarUtility
 {
     public partial class MainWindow : Window
     {
-        // 1. Definim structurile native cu care lucrează Windows
         [StructLayout(LayoutKind.Sequential)]
         public struct RECT
         {
@@ -25,12 +24,12 @@ namespace LightBarUtility
             public IntPtr lParam;
         }
 
-        // 2. Importăm funcția care negociază spațiul (din shell32.dll)
         [DllImport("shell32.dll")]
         public static extern int SHAppBarMessage(int dwMessage, ref APPBARDATA pData);
 
         private const int ABM_NEW = 0x0000;
         private const int ABM_REMOVE = 0x0001;
+        private const int ABM_QUERYPOS = 0x0002; // Comanda vitală care lipsea
         private const int ABM_SETPOS = 0x0003;
         private const int ABE_BOTTOM = 3;
 
@@ -43,35 +42,40 @@ namespace LightBarUtility
 
         private void MainWindow_Loaded(object? sender, RoutedEventArgs e)
         {
-            // Obținem ID-ul ferestrei noastre
             IntPtr hWnd = new WindowInteropHelper(this).Handle;
             
             APPBARDATA data = new APPBARDATA();
             data.cbSize = Marshal.SizeOf(data);
             data.hWnd = hWnd;
             
-            // Înregistrăm fereastra ca Bară de Sistem
+            // 1. Înregistrăm bara
             SHAppBarMessage(ABM_NEW, ref data);
 
-            // Cerem Windows-ului să ne rezerve spațiul exact deasupra Taskbar-ului
+            // 2. Cerem Windows-ului să calculeze marginile reale ale ecranului liber
             data.uEdge = ABE_BOTTOM;
-            data.rc.left = (int)SystemParameters.WorkArea.Left;
-            data.rc.right = (int)SystemParameters.WorkArea.Right;
-            data.rc.bottom = (int)SystemParameters.WorkArea.Bottom;
-            data.rc.top = data.rc.bottom - (int)this.Height;
+            data.rc.left = 0;
+            data.rc.right = (int)SystemParameters.PrimaryScreenWidth;
+            data.rc.top = 0;
+            data.rc.bottom = (int)SystemParameters.PrimaryScreenHeight;
 
-            // Confirmăm rezervarea
+            SHAppBarMessage(ABM_QUERYPOS, ref data);
+
+            // 3. Tăiem doar 40 de pixeli pentru bara noastră
+            int baraHeight = 40;
+            data.rc.top = data.rc.bottom - baraHeight;
+
+            // 4. Confirmăm rezervarea
             SHAppBarMessage(ABM_SETPOS, ref data);
 
-            // Mutăm fereastra noastră albă efectiv în acel spațiu sigur
+            // 5. Aplicăm coordonatele ferestrei noastre
             this.Left = data.rc.left;
             this.Top = data.rc.top;
             this.Width = data.rc.right - data.rc.left;
+            this.Height = baraHeight;
         }
 
         private void MainWindow_Closed(object? sender, EventArgs e)
         {
-            // Când apeși Alt+F4, spunem Windows-ului să elibereze spațiul ecranului
             IntPtr hWnd = new WindowInteropHelper(this).Handle;
             APPBARDATA data = new APPBARDATA();
             data.cbSize = Marshal.SizeOf(data);
