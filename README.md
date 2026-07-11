@@ -1,0 +1,22 @@
+# LightBarUtility
+
+LightBarUtility is a lightweight, system-integrated Windows application designed to create a bright white bar at the bottom of your screen. It serves as a software-based keyboard light, reflecting light from your monitor down onto your laptop or desktop keyboard in low-light environments.
+
+## Features
+
+- **Docked Mode (Default)**: Registers itself as a native Windows Application Desktop Toolbar (AppBar). It securely locks above the taskbar and pushes maximized windows (like Chrome or VS Code) upward so they never cover your light source.
+- **Floating Mode**: Need to see what's hidden underneath or at the bottom of your screen? Switch to Floating Mode, and you can left-click and drag the bar anywhere vertically or horizontally.
+- **Context Menu**: Right-click anywhere on the white bar to seamlessly toggle between modes or exit the application.
+- **High DPI Support**: Fully optimized for Windows 11 display scaling, ensuring the bar remains exactly 40 pixels high on any monitor setup.
+
+## How to Use
+
+1. **Launch**: Double-click `LightBarUtility.exe`.
+2. **Move (Floating Mode)**: Right-click the bar, select **Floating Mode**, then hold down the **left mouse button** to drag it.
+3. **Lock (Docked Mode)**: Right-click the bar and select **Docked Mode** to pin it back to the bottom edge.
+4. **Close**: Right-click and choose **Exit**, or press `Alt + F4` while the bar is active.
+
+## Download
+
+You can download the latest standalone executable from the Releases section:
+👉 **[Download LightBarUtility Latest Release](https://github.com/MediaExpres/LightBarUtility/releases)**
