@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LightBarUtility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6618b7c697c8e3966be01295ddbb17dbfae7379a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0582b8301706853e2b40d01fbb478f4dadb50ac3")]
 [assembly: System.Reflection.AssemblyProductAttribute("LightBarUtility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LightBarUtility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
