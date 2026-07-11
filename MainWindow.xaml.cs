@@ -46,12 +46,11 @@ namespace LightBarUtility
             this.Closed += MainWindow_Closed;
         }
 
-        private void MainWindow_Loaded(object? sender, RoutedEventArgs e)
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             SetDockedMode();
         }
 
-        // Permite mutarea barei doar când este în modul flotant
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (!isDocked && e.ChangedButton == MouseButton.Left)
@@ -60,7 +59,7 @@ namespace LightBarUtility
             }
         }
 
-        private void MenuFixat_Click(object sender, RoutedEventArgs e)
+        private void MenuDocked_Click(object sender, RoutedEventArgs e)
         {
             if (!isDocked)
             {
@@ -68,7 +67,7 @@ namespace LightBarUtility
             }
         }
 
-        private void MenuFlotant_Click(object sender, RoutedEventArgs e)
+        private void MenuFloating_Click(object sender, RoutedEventArgs e)
         {
             if (isDocked)
             {
@@ -77,7 +76,7 @@ namespace LightBarUtility
             }
         }
 
-        private void MenuClose_Click(object sender, RoutedEventArgs e)
+        private void MenuExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
@@ -134,7 +133,7 @@ namespace LightBarUtility
             }
         }
 
-        private void MainWindow_Closed(object? sender, EventArgs e)
+        private void MainWindow_Closed(object sender, EventArgs e)
         {
             UnregisterAppBar();
         }
