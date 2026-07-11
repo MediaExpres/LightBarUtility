@@ -14,11 +14,6 @@ namespace LightBarUtility
             this.SourceInitialized += MainWindow_SourceInitialized;
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
         // Added '?' to 'object' to resolve the CS8622 warning
         private void MainWindow_SourceInitialized(object? sender, EventArgs e)
         {
