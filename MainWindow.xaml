@@ -16,12 +16,12 @@
     </Window.ContextMenu>
     
     <Grid>
-        <TextBlock Text="v1.0" 
-                   Foreground="#888888" 
-                   FontSize="10" 
-                   HorizontalAlignment="Left" 
-                   VerticalAlignment="Center" 
-                   Margin="10,0,0,0" />
+        <TextBlock Text="LightBar For Keyboard | MediaExpres v1.0" 
+           Foreground="#888888" 
+           FontSize="10" 
+           HorizontalAlignment="Left" 
+           VerticalAlignment="Center" 
+           Margin="10,0,0,0" />
         
         <TextBlock Text="Right-click anywhere to toggle menu" 
                    Foreground="#333333" 
