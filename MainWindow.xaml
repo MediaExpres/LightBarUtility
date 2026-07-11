@@ -3,7 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="LightBar" Height="40" Width="1920"
         WindowStyle="None" ResizeMode="NoResize" 
-        Background="White" Topmost="True" ShowInTaskbar="False">
+        Background="White" Topmost="True" ShowInTaskbar="False"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Mod Fixat (Împinge ferestrele în sus)" Click="MenuFixat_Click"/>
+            <MenuItem Header="Mod Flotant (Plutește și poate fi mutat)" Click="MenuFlotant_Click"/>
+            <Separator/>
+            <MenuItem Header="Închide bara (Exit)" Click="MenuClose_Click"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    
     <Grid>
     </Grid>
 </Window>
