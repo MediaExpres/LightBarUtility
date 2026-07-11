@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Interop;
 
 namespace LightBarUtility
@@ -8,10 +9,7 @@ namespace LightBarUtility
     public partial class MainWindow : Window
     {
         [StructLayout(LayoutKind.Sequential)]
-        public struct RECT
-        {
-            public int left, top, right, bottom;
-        }
+        public struct RECT { public int left, top, right, bottom; }
 
         [StructLayout(LayoutKind.Sequential)]
         public struct APPBARDATA
@@ -38,6 +36,9 @@ namespace LightBarUtility
         private const int SM_CXSCREEN = 0;
         private const int SM_CYSCREEN = 1;
 
+        private bool isDocked = false;
+        private bool isAppBarRegistered = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -47,9 +48,44 @@ namespace LightBarUtility
 
         private void MainWindow_Loaded(object? sender, RoutedEventArgs e)
         {
+            SetDockedMode();
+        }
+
+        // Permite mutarea barei doar când este în modul flotant
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (!isDocked && e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void MenuFixat_Click(object sender, RoutedEventArgs e)
+        {
+            if (!isDocked)
+            {
+                SetDockedMode();
+            }
+        }
+
+        private void MenuFlotant_Click(object sender, RoutedEventArgs e)
+        {
+            if (isDocked)
+            {
+                isDocked = false;
+                UnregisterAppBar();
+            }
+        }
+
+        private void MenuClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SetDockedMode()
+        {
             IntPtr hWnd = new WindowInteropHelper(this).Handle;
             
-            // Calculăm factorul de scalare DPI al monitorului
             PresentationSource source = PresentationSource.FromVisual(this);
             double dpiY = source?.CompositionTarget?.TransformToDevice.M22 ?? 1.0;
             double dpiX = source?.CompositionTarget?.TransformToDevice.M11 ?? 1.0;
@@ -57,8 +93,12 @@ namespace LightBarUtility
             APPBARDATA data = new APPBARDATA();
             data.cbSize = Marshal.SizeOf(data);
             data.hWnd = hWnd;
-            
-            SHAppBarMessage(ABM_NEW, ref data);
+
+            if (!isAppBarRegistered)
+            {
+                SHAppBarMessage(ABM_NEW, ref data);
+                isAppBarRegistered = true;
+            }
 
             data.uEdge = ABE_BOTTOM;
             data.rc.left = 0;
@@ -68,26 +108,35 @@ namespace LightBarUtility
 
             SHAppBarMessage(ABM_QUERYPOS, ref data);
 
-            // Tăiem fix 40 de pixeli fizici
             int physicalHeight = (int)(40 * dpiY);
             data.rc.top = data.rc.bottom - physicalHeight;
 
             SHAppBarMessage(ABM_SETPOS, ref data);
 
-            // Ajustăm fereastra înapoi la pixeli logici pentru WPF
             this.Left = data.rc.left / dpiX;
             this.Top = data.rc.top / dpiY;
             this.Width = (data.rc.right - data.rc.left) / dpiX;
             this.Height = 40;
+
+            isDocked = true;
+        }
+
+        private void UnregisterAppBar()
+        {
+            if (isAppBarRegistered)
+            {
+                IntPtr hWnd = new WindowInteropHelper(this).Handle;
+                APPBARDATA data = new APPBARDATA();
+                data.cbSize = Marshal.SizeOf(data);
+                data.hWnd = hWnd;
+                SHAppBarMessage(ABM_REMOVE, ref data);
+                isAppBarRegistered = false;
+            }
         }
 
         private void MainWindow_Closed(object? sender, EventArgs e)
         {
-            IntPtr hWnd = new WindowInteropHelper(this).Handle;
-            APPBARDATA data = new APPBARDATA();
-            data.cbSize = Marshal.SizeOf(data);
-            data.hWnd = hWnd;
-            SHAppBarMessage(ABM_REMOVE, ref data);
+            UnregisterAppBar();
         }
     }
 }
