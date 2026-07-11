@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7TMJw/2ETgk=",
+  "dgSpecHash": "D5b4R3iARDg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mihai\\LightBarUtility\\LightBarUtility.csproj",
+  "projectFilePath": "C:\\Users\\mihai\\LightBarForKeyboard\\LightBarForKeyboard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mihai\\.nuget\\packages\\wpfappbar\\3.0.0\\wpfappbar.3.0.0.nupkg.sha512"
   ],

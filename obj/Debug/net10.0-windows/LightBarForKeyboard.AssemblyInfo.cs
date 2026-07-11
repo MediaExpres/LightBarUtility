@@ -10,12 +10,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LightBarUtility")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("MediaExpres")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("© 2026 MediaExpres")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be7235eaa915b1578d6bd4f73b206d5ce74dec8f")]
-[assembly: System.Reflection.AssemblyProductAttribute("LightBarUtility")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LightBarUtility")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a93ad9a99dfbc018b96c15d92dfcd37720f68878")]
+[assembly: System.Reflection.AssemblyProductAttribute("LightBar For Keyboard")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LightBarForKeyboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

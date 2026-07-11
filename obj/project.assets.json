@@ -43,11 +43,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mihai\\LightBarUtility\\LightBarUtility.csproj",
-      "projectName": "LightBarUtility",
-      "projectPath": "C:\\Users\\mihai\\LightBarUtility\\LightBarUtility.csproj",
+      "projectUniqueName": "C:\\Users\\mihai\\LightBarForKeyboard\\LightBarForKeyboard.csproj",
+      "projectName": "LightBarForKeyboard",
+      "projectPath": "C:\\Users\\mihai\\LightBarForKeyboard\\LightBarForKeyboard.csproj",
       "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mihai\\LightBarUtility\\obj\\",
+      "outputPath": "C:\\Users\\mihai\\LightBarForKeyboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config"

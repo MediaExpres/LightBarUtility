@@ -1,6 +1,6 @@
-# LightBarUtility
+# LightBar For Keyboard
 
-LightBarUtility is a lightweight, system-integrated Windows application designed to create a bright white bar at the bottom of your screen. It serves as a software-based keyboard light, reflecting light from your monitor down onto your laptop or desktop keyboard in low-light environments.
+LightBar For Keyboard is a lightweight, system-integrated Windows application designed to create a bright white bar at the bottom of your screen. It serves as a software-based keyboard light, reflecting light from your monitor down onto your laptop or desktop keyboard in low-light environments.
 
 ## Features
 
@@ -11,7 +11,7 @@ LightBarUtility is a lightweight, system-integrated Windows application designed
 
 ## How to Use
 
-1. **Launch**: Double-click `LightBarUtility.exe`.
+1. **Launch**: Double-click `LightBarForKeyboard.exe`.
 2. **Move (Floating Mode)**: Right-click the bar, select **Floating Mode**, then hold down the **left mouse button** to drag it.
 3. **Lock (Docked Mode)**: Right-click the bar and select **Docked Mode** to pin it back to the bottom edge.
 4. **Close**: Right-click and choose **Exit**, or press `Alt + F4` while the bar is active.
@@ -19,11 +19,11 @@ LightBarUtility is a lightweight, system-integrated Windows application designed
 ## Download
 
 You can download the latest standalone executable from the Releases section:
-👉 **[Download LightBarUtility Latest Release](https://github.com/MediaExpres/LightBarUtility/releases)**
+👉 **[Download LightBar For Keyboard Latest Release](https://github.com/MediaExpres/LightBarForKeyboard/releases)**
 
 ## License & Copyright
 
-© 2026 LightBarUtility. All rights reserved.
+© 2026 MediaExpres. All rights reserved.
 
 This software is **Free to use and modify** under the following conditions:
 - **Attribution**: You must give appropriate credit to the original source.
