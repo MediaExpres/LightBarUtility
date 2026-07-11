@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("© 2026 MediaExpres")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a93ad9a99dfbc018b96c15d92dfcd37720f68878")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d1054dde1d8ee117c735039bb040b1d69fa82fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("LightBar For Keyboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LightBarForKeyboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
