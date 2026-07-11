@@ -20,3 +20,12 @@ LightBarUtility is a lightweight, system-integrated Windows application designed
 
 You can download the latest standalone executable from the Releases section:
 👉 **[Download LightBarUtility Latest Release](https://github.com/MediaExpres/LightBarUtility/releases)**
+
+## License & Copyright
+
+© 2026 LightBarUtility. All rights reserved.
+
+This software is **Free to use and modify** under the following conditions:
+- **Attribution**: You must give appropriate credit to the original source.
+- **Modification**: You are free to modify this code for your own needs.
+- **No Warranty**: This software is provided "as-is", without warranty of any kind.

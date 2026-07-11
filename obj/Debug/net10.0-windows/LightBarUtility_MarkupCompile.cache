@@ -1,5 +1,5 @@
 ﻿LightBarUtility
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 C:\Users\mihai\LightBarUtility\App.xaml
 11407045341
 
-6-1609174159
+4-912079918
 2071529260005
 MainWindow.xaml;
 
