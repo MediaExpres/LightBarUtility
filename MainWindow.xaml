@@ -7,10 +7,10 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Window.ContextMenu>
         <ContextMenu>
-            <MenuItem Header="Culoare: Alb (Standard - Recomandat pentru LCD)" Click="ColorWhite_Click"/>
-            <MenuItem Header="Culoare: Verde Pur (OLED - Contrast maxim pe întuneric)" Click="ColorGreen_Click"/>
-            <MenuItem Header="Culoare: Roșu Pur (OLED - Consum minim, protejează vederea nocturnă)" Click="ColorRed_Click"/>
-            <MenuItem Header="Culoare: Galben (OLED - Lumină caldă, odihnitor pentru ochi)" Click="ColorYellow_Click"/>
+            <MenuItem Header="Color: White (Standard - Recommended for LCD | OLED: ~2.0W)" Click="ColorWhite_Click"/>
+            <MenuItem Header="Color: Pure Green (OLED - Max Contrast | ~0.5W)" Click="ColorGreen_Click"/>
+            <MenuItem Header="Color: Pure Red (OLED - Lowest Power / Night Vision | ~0.3W)" Click="ColorRed_Click"/>
+            <MenuItem Header="Color: Yellow (OLED - Warm / Eye-Friendly | ~0.8W)" Click="ColorYellow_Click"/>
             <Separator/>
             <MenuItem Header="Docked Mode (Pins to bottom)" Click="MenuDocked_Click"/>
             <MenuItem Header="Floating Mode (Movable)" Click="MenuFloating_Click"/>
