@@ -10,7 +10,14 @@
     <Company>MediaExpres</Company>
     <Product>LightBar For Keyboard</Product>
     <Copyright>© 2026 MediaExpres</Copyright>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>false</PublishTrimmed>
+    
+    <ApplicationIcon>LBFK.ico</ApplicationIcon>
   </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="WpfAppBar" Version="3.0.0" />
   </ItemGroup>
