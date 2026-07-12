@@ -23,7 +23,7 @@ public partial class App : Application
         base.OnStartup(e);
 
         // Deschidem fereastra manual doar dacă este prima instanță
-        MainWindow mainWindow = new MainWindow();
+        LightBarForKeyboard.MainWindow mainWindow = new();
         mainWindow.Show();
     }
 
