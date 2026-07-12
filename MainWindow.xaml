@@ -8,7 +8,7 @@
     <Window.ContextMenu>
         <ContextMenu>
             <MenuItem Header="Color: White (Standard | LCD: 0 Extra Power | OLED: Baseline Energy)" Click="ColorWhite_Click"/>
-            <MenuItem Header="Color: Pure Green (Max Contrast | LCD: 0 Extra Power | OLED: 75% EnergySavings)" Click="ColorGreen_Click"/>
+            <MenuItem Header="Color: Pure Green (Max Contrast | LCD: 0 Extra Power | OLED: 75% Energy Savings)" Click="ColorGreen_Click"/>
             <MenuItem Header="Color: Pure Red (Night Vision | LCD: 0 Extra Power | OLED: 85% Energy Savings)" Click="ColorRed_Click"/>
             <MenuItem Header="Color: Yellow (Eye-Friendly | LCD: 0 Extra Power | OLED: 60% Energy Savings)" Click="ColorYellow_Click"/>
             <Separator/>
