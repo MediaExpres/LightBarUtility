@@ -56,6 +56,16 @@ Our application leverages the screen you are already using.
 You can download the latest Setup Installer or the portable standalone executable from the Releases section:
 👉 **[Download LightBar For Keyboard Latest Release](https://github.com/MediaExpres/LightBarForKeyboard/releases)**
 
+## Support the Project
+
+If you find LightBar For Keyboard useful and it helps you save energy and work better in the dark, consider supporting its development! This software is free, but your support helps keep the lights on (literally and figuratively). 
+
+You can buy me a coffee or sponsor me via PayPal using the links below:
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/mihaipavel6)
+
+**[👉 Sponsor via PayPal](https://paypal.me/MediaExpres)**
+
 ## License & Copyright
 
 © 2026 MediaExpres. All rights reserved.
