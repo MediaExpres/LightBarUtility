@@ -1,0 +1,10 @@
+Welcome to the LightBar For Keyboard Setup!
+
+This utility provides a discrete, controllable light source directly from your monitor, perfect for typing in low-light environments without straining your eyes.
+
+Key Features:
+* Docked Mode: Automatically reserves space at the bottom of your screen so windows don't overlap.
+* Floating Mode: Drag the light bar anywhere on your screen.
+* Unobtrusive: No taskbar icon to ensure zero distractions.
+
+Click "Next" to continue the installation.
