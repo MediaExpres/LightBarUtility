@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
+using System.Windows.Media;
 
 namespace LightBarForKeyboard
 {
@@ -74,6 +75,26 @@ namespace LightBarForKeyboard
                 isDocked = false;
                 UnregisterAppBar();
             }
+        }
+
+        private void ColorWhite_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.White);
+        }
+
+        private void ColorGreen_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
+        }
+
+        private void ColorRed_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+        }
+
+        private void ColorYellow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Color.FromRgb(255, 191, 0));
         }
 
         private void MenuExit_Click(object sender, RoutedEventArgs e)

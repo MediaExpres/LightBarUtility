@@ -6,7 +6,9 @@
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AssemblyName>LightBarForKeyboard</AssemblyName>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <FileVersion>1.0.2</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
     <Company>MediaExpres</Company>
     <Product>LightBar For Keyboard</Product>
     <Copyright>© 2026 MediaExpres</Copyright>
