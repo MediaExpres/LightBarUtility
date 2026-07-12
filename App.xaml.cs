@@ -21,9 +21,8 @@ public partial class App : Application
 
         if (!createdNew)
         {
-            // Dacă Mutex-ul există deja, închide aplicația imediat
-            Application.Current.Shutdown();
-            return;
+            // Dacă Mutex-ul există deja, închide aplicația instantaneu
+            Environment.Exit(0);
         }
 
         base.OnStartup(e);
