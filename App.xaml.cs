@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Windows;
 
-namespace LightBarUtility;
+namespace LightBarForKeyboard;
 
 public partial class App : Application
 {
@@ -10,7 +10,7 @@ public partial class App : Application
 
     protected override void OnStartup(StartupEventArgs e)
     {
-        const string appName = "LightBarUtility_UniqueInstance";
+        const string appName = "LightBarForKeyboard_UniqueInstance";
         bool createdNew;
 
         _mutex = new Mutex(true, appName, out createdNew);
@@ -22,8 +22,7 @@ public partial class App : Application
 
         base.OnStartup(e);
 
-        // Deschidem fereastra manual doar dacă este prima instanță
-        LightBarForKeyboard.MainWindow mainWindow = new();
+        MainWindow mainWindow = new();
         mainWindow.Show();
     }
 
