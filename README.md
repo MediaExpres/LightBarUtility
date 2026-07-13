@@ -56,6 +56,13 @@ Our application leverages the screen you are already using.
 You can download the latest Setup Installer or the portable standalone executable from the Releases section:
 👉 **[Download LightBar For Keyboard Latest Release](https://github.com/MediaExpres/LightBarForKeyboard/releases)**
 
+### Note on Windows SmartScreen
+Because this is a new, independent application without a corporate Code Signing certificate, Windows Defender SmartScreen might display a blue "Windows protected your PC" warning. This is a standard security prompt for new software.
+
+**To run the application:**
+1. Click on **More info** in the blue popup.
+2. Click the **Run anyway** button that appears.
+
 ## Support the Project
 
 If you find LightBar For Keyboard useful and it helps you save energy and work better in the dark, consider supporting its development! This software is free, but your support helps keep the lights on (literally and figuratively). 
