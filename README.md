@@ -62,7 +62,9 @@ If you find LightBar For Keyboard useful and it helps you save energy and work b
 
 You can buy me a coffee or sponsor me via PayPal using the links below:
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/mihaipavel6)
+<a href="https://buymeacoffee.com/mihaipavel6">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="150">
+</a>
 
 **[👉 Sponsor via PayPal](https://paypal.me/MediaExpres)**
 
